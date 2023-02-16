@@ -1,0 +1,9 @@
+version: '3'
+services:
+  nsfw-api:
+    image: penndu/nsfw-api:latest
+    restart: unless-stopped
+    hostname: nsfw-api
+    container_name: nsfw-api
+    ports:
+      - "3000:3000"
